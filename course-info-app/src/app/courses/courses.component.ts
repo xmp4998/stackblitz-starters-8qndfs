@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Course } from '../Course.Interface';
-import { testcourse } from '../test-course';
+import { Course } from '../Course';
+import { COURSES } from '../test-course';
 
 @Component({
   selector: 'app-courses',
@@ -8,7 +8,7 @@ import { testcourse } from '../test-course';
   styleUrls: ['./courses.component.css'],
 })
 export class CoursesComponent {
-  // course = 'Web Development';
+  //course = 'Web Development';
   course: Course = {
     course_id: 1,
     course_title: 'Web Develop',
@@ -16,4 +16,5 @@ export class CoursesComponent {
     period: 'Week 12',
     lecturer: 'Test naem',
   };
+  courses = COURSES;
 }
