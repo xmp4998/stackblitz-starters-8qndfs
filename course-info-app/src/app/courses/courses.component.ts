@@ -17,4 +17,8 @@ export class CoursesComponent {
     lecturer: 'Test naem',
   };
   courses = COURSES;
+  selectedCourse?: Course;
+  onSelect(course: Course): void {
+    this.selectedCourse = course;
+  }
 }
